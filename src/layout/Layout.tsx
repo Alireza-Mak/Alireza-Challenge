@@ -24,57 +24,65 @@ const Layout = () => {
     // eslint-disable-next-line
   }, []);
   return (
-      <div className={styles.row}>
-        <div className={`${styles.colLeft}`}>
-          <div className={styles.container}>
-            <p className={`${styles.marginZero} ${styles.header}`}>Photos</p>
-            <div className={styles.btnsContainer}>
-              <button
-                onClick={() => {
-                  homePage('recentlyPage');
-                  recentlyBtn('recentlyBtn');
-                  selectedId(state.items[0].id);
-                  selectItem(state.items[0]);
-                }}
-                className={`${styles.recentlyBtn}  ${
-                  state.styleBtn === 'recentlyBtn' ? styles.selected : ''
-                }`}
-              >
-                Recently Added
-              </button>
-              <button
-                onClick={() => {
-                  let firstFavorite = state.items.filter(
-                    (item: any) => item.favorited === true
-                  );
-                  if (firstFavorite.length > 0) {
-                    selectedId(firstFavorite[0].id);
-                    selectItem(firstFavorite[0]);
-                  }
-                  favoritedPage('favoritedPage');
-                  favoritedBtn('favoritedBtn');
-                }}
-                className={`${styles.favoritedBtn} ${
-                  state.styleBtn === 'favoritedBtn' ? styles.selected : ''
-                }`}
-              >
-                Favorited
-              </button>
-            </div>
-            {state.togglePages === 'recentlyPage' && (
-              <ShowItems data={state.items} button="recentlyBtn" />
-            )}
-            {state.togglePages === 'favoritedPage' && (
-              <ShowItems data={favoriteItems} button="favoritedBtn" />
-            )}
+    <div className={styles.row}>
+      <div className={`${styles.colLeft}`}>
+        <div className={styles.container}>
+          <p className={`${styles.marginZero} ${styles.header}`}>Photos</p>
+          <div className={styles.btnsContainer}>
+            <button
+              onClick={() => {
+                homePage('recentlyPage');
+                recentlyBtn('recentlyBtn');
+                selectedId(state.items[0].id);
+                selectItem(state.items[0]);
+              }}
+              className={`${styles.recentlyBtn}  ${
+                state.styleBtn === 'recentlyBtn' ? styles.selected : ''
+              }`}
+            >
+              Recently Added
+            </button>
+            <button
+              onClick={() => {
+                let firstFavorite = state.items.filter(
+                  (item: any) => item.favorited === true
+                );
+                if (firstFavorite.length > 0) {
+                  selectedId(firstFavorite[0].id);
+                  selectItem(firstFavorite[0]);
+                }
+                favoritedPage('favoritedPage');
+                favoritedBtn('favoritedBtn');
+              }}
+              className={`${styles.favoritedBtn} ${
+                state.styleBtn === 'favoritedBtn' ? styles.selected : ''
+              }`}
+            >
+              Favorited
+            </button>
           </div>
-        </div>
-        <div className={`${styles.colRight}`}>
-          <div className={styles.container}>
-            <ShowSelectedItem />
-          </div>
+          {state.togglePages === 'recentlyPage' && (
+            <ShowItems
+              storeLength={state.items.length}
+              data={state.items}
+              button="recentlyBtn"
+            />
+          )}
+          {state.togglePages === 'favoritedPage' && (
+            <ShowItems
+              storeLength={favoriteItems.length}
+              data={favoriteItems}
+              button="favoritedBtn"
+            />
+          )}
         </div>
       </div>
+      <div className={`${styles.colRight}`}>
+        <div className={styles.container}>
+          <ShowSelectedItem />
+        </div>
+      </div>
+    </div>
   );
 };
 
