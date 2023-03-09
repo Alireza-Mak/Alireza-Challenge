@@ -1,7 +1,17 @@
+.wrapper {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .icon {
   cursor: pointer;
 }
 
+.icon:hover {
+  animation: pulse infinite 1s;
+}
 @media (hover: none), (pointer: coarse) {
   .icon:hover {
     animation: none;

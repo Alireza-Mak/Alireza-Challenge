@@ -1,3 +1,5 @@
+/** @format */
+
 import styles from './ShowItems.module.css';
 import ShowDetailItem from './ShowDetailItem/ShowDetailItem';
 import { characterLimiter, numberFormatter } from '../../Utils';
@@ -10,7 +12,7 @@ interface Props {
   data: Item[];
   button: string;
 }
-const ShowItems: React.FC<Props> = ({ data, button, }) => {
+const ShowItems: React.FC<Props> = ({ data, button }) => {
   const dispatch = useDispatch();
   const { selectItem, selectedId } = bindActionCreators(
     actionCreators,
@@ -45,13 +47,7 @@ const ShowItems: React.FC<Props> = ({ data, button, }) => {
     });
   };
 
-  return (
-    <div
-      className={styles.container}
-    >
-      {renderItems()}
-    </div>
-  );
+  return <div className={styles.container}>{renderItems()}</div>;
 };
 
 export default ShowItems;

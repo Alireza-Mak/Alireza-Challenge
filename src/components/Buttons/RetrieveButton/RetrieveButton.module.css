@@ -8,6 +8,10 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .animatedButton::after {
@@ -26,4 +30,14 @@
 .animatedButton:hover::after {
   width: 200px;
   height: 200px;
+}
+@media (hover: none), (pointer: coarse) {
+  .animatedButton:hover::after {
+    width: 0;
+    height: 0;
+  }
+  .animatedButton:active::after {
+    width: 200px;
+    height: 200px;
+  }
 }

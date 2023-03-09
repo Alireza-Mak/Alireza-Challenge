@@ -12,6 +12,10 @@
   width: 100%;
   transition: all 0.5s;
   outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .deleteBtn:hover {
   background-color: #de0000;
@@ -22,7 +26,12 @@
 @media (hover: none), (pointer: coarse) {
   .deleteBtn:hover {
     background-color: transparent;
-  color: #334154;
-  border: 1px solid #cbd5e1;
+    color: #334154;
+    border: 1px solid #cbd5e1;
+  }
+  .deleteBtn:active {
+    background-color: #de0000;
+    color: #ffff;
+    border: 1px solid #de0000;
   }
 }

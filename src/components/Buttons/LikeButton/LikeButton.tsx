@@ -19,7 +19,7 @@ const LikeButton = () => {
     (item: Item) => item.id === state.selected_item?.id
   )[0]?.favorited;
   return (
-    <div>
+    <div className={styles.wrapper}>
       <FontAwesomeIcon
         onClick={() => {
           if (state.selected_item) {
@@ -28,6 +28,8 @@ const LikeButton = () => {
         }}
         onMouseEnter={() => setIconStyle(true)}
         onMouseLeave={() => setIconStyle(false)}
+        onTouchStart={() => setIconStyle(true)}
+        onTouchEnd={() => setIconStyle(false)}
         className={styles.icon}
         icon={toggle || iconStyle ? solidHeart : regularHeart}
         color={iconStyle ||toggle ? '#d85887' : '#64748b'}
