@@ -30,7 +30,7 @@ const LikeButton = () => {
         onMouseLeave={() => setIconStyle(false)}
         className={styles.icon}
         icon={toggle || iconStyle ? solidHeart : regularHeart}
-        color={iconStyle ? '#334154' : '#64748b'}
+        color={iconStyle ||toggle ? '#d85887' : '#64748b'}
       />
     </div>
   );
