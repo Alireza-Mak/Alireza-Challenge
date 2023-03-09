@@ -9,9 +9,8 @@ import RetrieveButton from '../Buttons/RetrieveButton/RetrieveButton';
 interface Props {
   data: Item[];
   button: string;
-  storeLength: number;
 }
-const ShowItems: React.FC<Props> = ({ data, button,storeLength }) => {
+const ShowItems: React.FC<Props> = ({ data, button, }) => {
   const dispatch = useDispatch();
   const { selectItem, selectedId } = bindActionCreators(
     actionCreators,
@@ -49,7 +48,6 @@ const ShowItems: React.FC<Props> = ({ data, button,storeLength }) => {
   return (
     <div
       className={styles.container}
-      style={{ justifyContent: storeLength >= 5 ? 'space-between' : 'start' }}
     >
       {renderItems()}
     </div>

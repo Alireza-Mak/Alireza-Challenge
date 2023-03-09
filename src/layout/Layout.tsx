@@ -63,14 +63,12 @@ const Layout = () => {
           </div>
           {state.togglePages === 'recentlyPage' && (
             <ShowItems
-              storeLength={state.items.length}
               data={state.items}
               button="recentlyBtn"
             />
           )}
           {state.togglePages === 'favoritedPage' && (
             <ShowItems
-              storeLength={favoriteItems.length}
               data={favoriteItems}
               button="favoritedBtn"
             />

@@ -14,6 +14,7 @@
   outline: none;
 }
 .deleteBtn:hover{
- background-color:   #334154;
- color: #cbd5e1;
+ background-color:   #de0000;
+ color: #ffff;
+   border: 1px solid #de0000;
 }
