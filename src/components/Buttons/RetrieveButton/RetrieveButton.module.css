@@ -1,0 +1,29 @@
+.animatedButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #fff;
+  background: linear-gradient(45deg, #4f45e4, #64748b);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.animatedButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.animatedButton:hover::after {
+  width: 200px;
+  height: 200px;
+}

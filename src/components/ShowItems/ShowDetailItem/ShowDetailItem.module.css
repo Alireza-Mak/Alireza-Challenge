@@ -1,0 +1,26 @@
+/** @format */
+
+.container {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.container:hover {
+  filter: brightness(70%);
+  transform: scale(1.03);
+}
+.imgContainer {
+  width: 100%;
+  height: 100px;
+  padding: 1px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+}
+.imgContainerBorder {
+  border: 2px solid #4f45e4;
+}
+.imgContainer img {
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
