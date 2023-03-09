@@ -18,3 +18,11 @@
  color: #ffff;
    border: 1px solid #de0000;
 }
+
+@media (pointer: fine) {
+.deleteBtn:hover{
+ background-color:   #de0000;
+ color: #ffff;
+   border: 1px solid #de0000;
+}
+}

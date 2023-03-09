@@ -1,8 +1,12 @@
 .icon {
   cursor: pointer;
 }
+
+@media (pointer: fine) {
 .icon:hover {
   animation: pulse infinite 1s;
+}
+
 }
 @keyframes pulse {
   0% {
