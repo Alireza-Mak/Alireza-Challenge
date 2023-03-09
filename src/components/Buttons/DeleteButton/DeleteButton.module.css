@@ -21,8 +21,8 @@
 
 @media (hover: none), (pointer: coarse) {
   .deleteBtn:hover {
-    background-color: #de0000;
-    color: #ffff;
-    border: 1px solid #de0000;
+    background-color: transparent;
+  color: #334154;
+  border: 1px solid #cbd5e1;
   }
 }

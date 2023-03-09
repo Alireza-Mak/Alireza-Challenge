@@ -4,7 +4,7 @@
 
 @media (hover: none), (pointer: coarse) {
   .icon:hover {
-    animation: pulse infinite 1s;
+    animation: none;
   }
 }
 @keyframes pulse {
