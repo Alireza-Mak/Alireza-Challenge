@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Alireza-Mak/Alireza-Challenge/static/css/main.bc9534eb.css",
+    "main.js": "/Alireza-Mak/Alireza-Challenge/static/js/main.16907f42.js",
+    "static/js/787.09b9ad3e.chunk.js": "/Alireza-Mak/Alireza-Challenge/static/js/787.09b9ad3e.chunk.js",
+    "index.html": "/Alireza-Mak/Alireza-Challenge/index.html",
+    "main.bc9534eb.css.map": "/Alireza-Mak/Alireza-Challenge/static/css/main.bc9534eb.css.map",
+    "main.16907f42.js.map": "/Alireza-Mak/Alireza-Challenge/static/js/main.16907f42.js.map",
+    "787.09b9ad3e.chunk.js.map": "/Alireza-Mak/Alireza-Challenge/static/js/787.09b9ad3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc9534eb.css",
+    "static/js/main.16907f42.js"
+  ]
+}
