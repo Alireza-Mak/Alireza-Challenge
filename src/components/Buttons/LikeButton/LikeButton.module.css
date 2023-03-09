@@ -2,11 +2,10 @@
   cursor: pointer;
 }
 
-@media (pointer: fine) {
-.icon:hover {
-  animation: pulse infinite 1s;
-}
-
+@media (hover: none), (pointer: coarse) {
+  .icon:hover {
+    animation: pulse infinite 1s;
+  }
 }
 @keyframes pulse {
   0% {
