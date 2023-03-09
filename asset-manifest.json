@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Alireza-Challenge/static/css/main.bc9534eb.css",
-    "main.js": "/Alireza-Challenge/static/js/main.e26895ea.js",
+    "main.js": "/Alireza-Challenge/static/js/main.26af7d53.js",
     "static/js/787.09b9ad3e.chunk.js": "/Alireza-Challenge/static/js/787.09b9ad3e.chunk.js",
     "index.html": "/Alireza-Challenge/index.html",
     "main.bc9534eb.css.map": "/Alireza-Challenge/static/css/main.bc9534eb.css.map",
-    "main.e26895ea.js.map": "/Alireza-Challenge/static/js/main.e26895ea.js.map",
+    "main.26af7d53.js.map": "/Alireza-Challenge/static/js/main.26af7d53.js.map",
     "787.09b9ad3e.chunk.js.map": "/Alireza-Challenge/static/js/787.09b9ad3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc9534eb.css",
-    "static/js/main.e26895ea.js"
+    "static/js/main.26af7d53.js"
   ]
 }
